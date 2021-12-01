@@ -1329,8 +1329,9 @@ Footer
 
 .footer__top {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   color: var(--grey3);
+  padding: 0 2rem;
 }
 
 .footer-top__box a:link,
