@@ -7,79 +7,70 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
-
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-
-  <!-- Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
-">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <!-- Box icons -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
   <!-- Custom StyleSheet -->
   <link rel="stylesheet" href="styles.css" />
+  <!--Vue-->
+  <script src="https://unpkg.com/vue"></script>
 
   <title>Phone Shop</title>
+  
 </head>
 
 <body>
-
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="navigation">
-      <div class="container">
-        <nav class="nav">
-          <div class="nav__hamburger">
-            <svg>
-              <use xlink:href="./images/sprite.svg#icon-menu"></use>
-            </svg>
-          </div>
-
-          <div class="nav__logo">
-            <a href="/" class="scroll-link">
-              PHONE
-            </a>
-          </div>
-
-          <div class="nav__menu">
-            <div class="menu__top">
-              <span class="nav__category">TEMIRTASSOV</span>
-              <a href="#" class="close__toggle">
-                <svg>
-                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
-                </svg>
-              </a>
+   <!-- Header -->
+   <header id="home" class="header">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <a href="#home">TEMIRTASS</a>
+          
+        </div>
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <a href="#home">TEMIRTASS</a>
             </div>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#header" class="nav__link scroll-link">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a href="#category" class="nav__link scroll-link">Гаджеты</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contact" class="nav__link scroll-link">Контакты</a>
-              </li>
-            </ul>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
           </div>
-        </nav>
-      </div>
-    </div>
 
-    <!-- Hero -->
-    <div class="hero">
-      <div class="hero__center">
-        <div class="hero__left">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#product" class="nav-link">Гаджеты</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link scroll-link">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link scroll-link">Контакты</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro -->
+    <div class="intro">
+      <div class="intro_center">
+        <div class="intro01">
           <span class="">Яркие Новинки 2021</span>
           <h1 class="">ТЕЛЕФОНЫ СДЕЛАНЫ ДЛЯ ВАС!</h1>
           <p>Тенденции из коллекции в стиле мобильных телефонов и ноутбуковn</p>
           
         </div>
-        <div class="hero__right">
-          <div class="hero__img-container">
+        <div class="intro02">
             <img class="banner_01" src="./images/banner_01.png" alt="banner2" />
-          </div>
         </div>
       </div>
     </div>
@@ -87,44 +78,41 @@
   <!-- End Header -->
 
   <!-- Main -->
-  <main id="main">
+  <main>
     <div class="container">
-      <!-- Collection -->
-      <section id="collection" class="section collection">
-        <div class="collection__container" >
-          <div class="collection__box">
+      <!-- Main Items -->
+      <section class="section items">
+        <div class="items__container" >
+          <div class="items__box">
             <div class="img__container">
-              <img class="collection_02" src="./images/collection_02.png" alt="">
+              <img class="collection_02" src="./images/products/macBook/macbook_1.png" alt="">
             </div>
-            <div class="collection__content">
-              <div class="collection__data">
-                <span>New Colors Introduced</span>
-                <h1>HEADPHONES</h1>
-                <a href="#shop">SHOP NOW</a>
+            <div class="items__content">
+              <div class="items__data">
+                <span>Space Grey model</span>
+                <h1>MacBook Pro</h1>
+                
               </div>
             </div>
           </div>
-          <div class="collection__box">
+          <div class="items__box">
             <div class="img__container">
               <img class="collection_01" src="./images/collection_01.png" alt="">
             </div>
-            <div class="collection__content">
-              <div class="collection__data">
+            <div class="items__content">
+              <div class="items__data">
                 <span>Phone Device Presets</span>
-                <h1>SMARTPHONES</h1>
-                <a href="#">SHOP NOW</a>
+                <h1>Смартфоны</h1>
+               
               </div>
             </div>
           </div>
       </section>
 
       <!-- Latest Products -->
-      <section class="section latest__products" id="category">
+      <section class="section latest__products" id="product">
         <div class="title__container">
-            <div class="section__title active" data-id="Latest Products">
-              <span class="dot"></span>
               <h1 class="primary__title">Latest Products</h1>
-            </div>
         </div>
         <div class="product-center container">
           <div class="product">
@@ -137,8 +125,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+             </div>
             
           </div>
           <div class="product">
@@ -151,8 +138,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+              </div>
             
           </div>
           <div class="product">
@@ -165,8 +151,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+             </div>
             
           </div>
           <div class="product">
@@ -179,8 +164,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+             </div>
             
           </div>
           <div class="product">
@@ -193,8 +177,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+                 </div>
             
           </div>
           <div class="product">
@@ -207,8 +190,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+              </div>
             
           </div>
           
@@ -223,8 +205,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-            </div>
+                       </div>
             
           </div>
           <div class="product">
@@ -237,7 +218,7 @@
               <div class="product__price">
                 <h4>$750</h4>
               </div>
-              <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+             
             </div>
             
           </div>
@@ -250,52 +231,53 @@
         <div class="facility__contianer" >
           <div class="facility__box">
             <div class="facility-img__container">
-              
+              <i class='bx bxs-package'></i>
             </div>
-            <p>FREE SHIPPING WORLD WIDE</p>
+            <p>ДОСТАВКА</p>
           </div>
 
           <div class="facility__box">
             <div class="facility-img__container">
-              
+              <i class='bx bx-money-withdraw'></i>
             </div>
-            <p>100% MONEY BACK GUARANTEE</p>
+            <p>РАЗНЫЕ СПОСОБЫ ОПЛАТЫ</p>
           </div>
 
           <div class="facility__box">
             <div class="facility-img__container">
-             
+              <i class='bx bx-save' ></i>
             </div>
-            <p>MANY PAYMENT GATWAYS</p>
+            <p>ГАРАНТИЯ</p>
           </div>
+
 
           <div class="facility__box">
             <div class="facility-img__container">
-             
+              <i class='bx bxl-whatsapp'></i>
             </div>
-            <p>24/7 ONLINE SUPPORT</p>
+            <p>24/7 ОНЛАЙН ПОДДЕРЖКА</p>
           </div>
         </div>
       </div>
     </section>
-    </div>
+    
+
+  
 
     <!-- Testimonial Section -->
     <section class="section testimonial" id="testimonial">
-      <div class="testimonial__container">
-        <div class="testimonial__box">
-          <div class="client__image">
-            <img src="./images/profile1.jpg" alt="profile">
+      
+      <div class="testimonial-center container" id="feedback">
+        <template v-for="feedback in listOfFeedbacks ">
+          <div class="feedback">
+            <span>&ldquo;</span>
+            <p>
+              {{feedback.title}}
+            </p>
+            <h4>{{feedback.author}}</h4>
           </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
-            quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing
-            elit. Recusandae fuga hic nesciunt tempore
-            quibusdam consequatur eligendi unde officia ex quae.</p>
-          <div class="client__info">
-            <h3>John Smith</h3>
-            <span>Founder at Apple</span>
-          </div>
-        </div>
+        </template>
+
       </div>
     </section>
 
@@ -305,12 +287,12 @@
       <div class="container">
         <div class="newsletter__content">
           <div class="newsletter__data">
-            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <h3>ПОДПИСЫВАЙТЕСЬ НА НАШУ НОВОСТНУЮ РАССЫЛКУ</h3>
             <p>A short sentence describing what someone will receive by subscribing</p>
           </div>
           <form action="#">
             <input type="email" placeholder="Enter your email address" class="newsletter__email">
-            <a class="newsletter__link" href="#">subscribe</a>
+            <a class="newsletter__link" href="#">подписка</a>
           </form>
         </div>
       </div>
@@ -323,10 +305,11 @@
   <!-- Footer -->
   <footer id="footer" class="section footer">
     <div class="container">
-      <div class="footer__top">
 
+      <div class="footer__top">
         <div class="footer-top__box">
           <h3>MY ACCOUNT</h3>
+
           <a href="#">My Account</a>
           <a href="#">Order History</a>
           <a href="#">Wish List</a>
@@ -382,6 +365,8 @@
   <!-- Custom JavaScript -->
   <script src="./js/index.js"></script>
 
+  <!--Vue script-->
+  <script src="./js/vue.js"></script>
 </body>
 
 </html>
